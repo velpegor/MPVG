@@ -178,14 +178,28 @@
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Quantitative Results</h2>
-        <div class="content has-text-justified">
-			<img src="./static/images/result.png" alt="result" style="width:40%; max-width:1000px; display:block; margin:0 auto;">
-
-		</div>
+        <div class="columns is-vcentered">
+			<!-- 왼쪽 열: result.png -->
+			<div class="column is-half">
+			  <img src="./static/images/result.png" alt="result" style="width:100%; max-width:1000px; display:block; margin:0 auto;">
+			</div>
+			<!-- 오른쪽 열: result2, result3, result4 (세로로 배치) -->
+			<div class="column is-half">
+			  <img src="./static/images/result2.png" alt="result2" style="width:100%; max-width:1000px; display:block; margin:20px auto;">
+			  <img src="./static/images/result3.png" alt="result3" style="width:100%; max-width:1000px; display:block; margin:20px auto;">
+			  <img src="./static/images/result4.png" alt="result4" style="width:100%; max-width:1000px; display:block; margin:20px auto;">
+			</div>
+		  </div>
 	  </div>
 	</div>
 		<p>
-            Table: Top-1 accuracy comparison with various methods, using DeiT-T, DeiT-S, DeiT-B, Swin-Ti, CeiT-Ti, T2T-ViT-7 on ImageNet-1K.
+            <p>
+				Table: <strong>Left</strong>, Top-1 accuracy comparison with various methods, using DeiT-T, DeiT-S, DeiT-B, Swin-Ti, CeiT-Ti, and T2T-ViT-7 on ImageNet-1K. <strong>Upper-Right</strong>, Top-1 accuracy comparison with various methods, using ViT-Lite and T2T-ViT-7 on CIFAR-100.
+				<strong>Middle-Right</strong>, Performance comparison of object detection on COCO2017.
+				<strong>Lower-Right</strong>, Performance comparison of semantic segmentation on ADE20K.
+			  </p>
+			  
+
           </p>
         </div>
         <br/>
